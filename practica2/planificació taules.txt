@@ -1,0 +1,52 @@
+-- taules
+
+-- taula per registrar processos
+
+    -- id proces
+    -- nom process
+    -- descripció
+
+
+-- taula estadístiques de control
+
+    -- id
+    -- dia_i_hora_de_carrega
+    -- cap_de_setmana?
+    -- nom fixer  
+    -- linies_afegides
+    
+-- taula auxiliar per entrar les dades del fixer    
+
+	-- data 
+    -- hora
+    -- Nom màquina
+    -- process
+    -- descripció
+
+	-- taula auxiliar per entrar les dades del fixer simplificant els processos
+
+	--id
+	-- data 
+    -- hora
+    -- Nom màquina
+    -- id_process
+
+
+	--taula per registrar modificacions en les taules
+
+	--id
+	--val_Nou
+	--Val_Vell
+	--Hora_event
+	--user_responsable
+	--Descripcio
+
+ -- fk
+	-- log.process <-> registre_processos.nom_process (n:n) (ja que el mateix process pot tenir varies descripcions)
+    
+
+-- Procedures
+
+	-- Procedure per inserir dades
+    -- procedure per exportar dades 
+    -- procedure per registrar existents o nous processos amb les seves descripcions en la taula processos (un process pot tenir el mateix nom però pot tenir diferentes descripcions) (s'utilitzara en un triger que saltara en inserir dades)

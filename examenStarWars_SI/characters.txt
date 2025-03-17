@@ -1,0 +1,3 @@
+AlanTuring	175	65	brown	white	blue	1912	male	NA	Human	
+SteveJobs	185	70	brown	white	brown	1955	male	NA	Human	
+ElonMusk	190	85	brown	white	brown	1971	male	NA	Human	
